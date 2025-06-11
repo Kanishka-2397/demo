@@ -1,0 +1,67 @@
+{
+  "base_url": "https://www.aosmithindia.com/",
+  "items": [
+    {
+      "name": "title",
+      "selectors": "h1.product-title, h1",  
+      "type": "text",
+      "match": "first"
+    },
+    {
+      "name": "Product Benefits",
+      "selectors": "div.accordion.md-accordion.accordion-1",
+      "type": "text",
+      "match": "all"
+    },
+    {
+        "name": "image_url",
+        "selectors": ".woocommerce-product-gallery__image a",
+        "type": "href",
+        "match": "all"
+    },
+    {
+        "name": "image_zoom",
+        "selectors": ".woocommerce-product-gallery__image img",
+        "type": "data-zoom_src",
+        "match": "all"
+    },
+
+
+    {
+        "name": "pdf_url",
+        "selectors": ".brochers-wrapper a",
+        "type": "href",
+        "match": "all"
+    }
+
+  ],
+  "action": {
+    "click": {
+      "selector": "i.fa.fa-search"
+    },
+    "fill": {
+      "selector": "input#search-modal",
+      "text": "{{query}}"
+    }
+  },
+  "result_selector": "button.view_prod"
+}
+
+
+
+
+
+
+
+{
+  "sender_email": "kanishka9723@gmail.com",
+  "password": "your_app_password",
+  "smtp_server": "smtp.gmail.com",
+  "smtp_port": 587,
+  "recipient_email": "kkanishka9723@gmail.com"
+}
+
+
+
+
+
